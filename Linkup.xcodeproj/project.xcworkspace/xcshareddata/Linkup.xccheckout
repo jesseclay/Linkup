@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A11A7B1C-8D39-4BBF-A313-9330AF506744</string>
+	<string>7F104930-A694-4953-830E-E0E557C0EF05</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Linkup</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>0EC5EBC8-6698-4C23-818D-A4A4679DE67C</key>
-		<string>ssh://github.com/jesseclay/linkup.git</string>
+		<key>D38AB13E-9604-4792-B806-B1FB47ABE4A6</key>
+		<string>ssh://github.com/jesseclay/Linkup.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Linkup.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>0EC5EBC8-6698-4C23-818D-A4A4679DE67C</key>
+		<key>D38AB13E-9604-4792-B806-B1FB47ABE4A6</key>
 		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>ssh://github.com/jesseclay/linkup.git</string>
+	<string>ssh://github.com/jesseclay/Linkup.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>0EC5EBC8-6698-4C23-818D-A4A4679DE67C</string>
+	<string>D38AB13E-9604-4792-B806-B1FB47ABE4A6</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>0EC5EBC8-6698-4C23-818D-A4A4679DE67C</string>
+			<string>D38AB13E-9604-4792-B806-B1FB47ABE4A6</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Linkup</string>
+			<string>linkup</string>
 		</dict>
 	</array>
 </dict>

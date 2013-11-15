@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BDD023FB1836A63D00DDDF8D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD023FA1836A63D00DDDF8D /* Parse.framework */; };
 		BDD023FD1836A65A00DDDF8D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD023FC1836A65A00DDDF8D /* FacebookSDK.framework */; };
 		C09445901835996800A67974 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C094458F1835996800A67974 /* Foundation.framework */; };
 		C09445921835996800A67974 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09445911835996800A67974 /* CoreGraphics.framework */; };
@@ -34,6 +33,7 @@
 		C09445E11835A9D300A67974 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C09445E01835A9D300A67974 /* LoginViewController.m */; };
 		C09445E51835B23300A67974 /* FriendFinderMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C09445E41835B23300A67974 /* FriendFinderMapViewController.m */; };
 		C09445E71835B32B00A67974 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09445E61835B32B00A67974 /* MapKit.framework */; };
+		C0AF943A1836E3CF00705AE0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AF94391836E3CF00705AE0 /* Parse.framework */; };
 		C0F699F31835DD0B006E2C71 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F699F21835DD0B006E2C71 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		BDD023FA1836A63D00DDDF8D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		BDD023FC1836A65A00DDDF8D /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		C094458C1835996800A67974 /* Linkup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Linkup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C094458F1835996800A67974 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,7 +68,6 @@
 		C09445B61835996800A67974 /* LinkupTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LinkupTests-Info.plist"; sourceTree = "<group>"; };
 		C09445B81835996800A67974 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C09445BA1835996800A67974 /* LinkupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkupTests.m; sourceTree = "<group>"; };
-		C09445C418359A9C00A67974 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		C09445C618359AB800A67974 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C09445C818359ABF00A67974 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		C09445CA18359ACA00A67974 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -84,6 +82,7 @@
 		C09445E41835B23300A67974 /* FriendFinderMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendFinderMapViewController.m; sourceTree = "<group>"; };
 		C09445E61835B32B00A67974 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C0AF94381836D81B00705AE0 /* LinkupSecretKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkupSecretKeys.h; sourceTree = "<group>"; };
+		C0AF94391836E3CF00705AE0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Downloads/Parse.framework; sourceTree = "<group>"; };
 		C0F699F21835DD0B006E2C71 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -92,10 +91,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0AF943A1836E3CF00705AE0 /* Parse.framework in Frameworks */,
 				C0F699F31835DD0B006E2C71 /* MessageUI.framework in Frameworks */,
 				C09445E71835B32B00A67974 /* MapKit.framework in Frameworks */,
 				C09445D718359AF500A67974 /* SystemConfiguration.framework in Frameworks */,
-				BDD023FB1836A63D00DDDF8D /* Parse.framework in Frameworks */,
 				C09445D318359AE700A67974 /* Security.framework in Frameworks */,
 				C09445D118359AE000A67974 /* QuartzCore.framework in Frameworks */,
 				C09445CF18359AD900A67974 /* MobileCoreServices.framework in Frameworks */,
@@ -145,7 +144,7 @@
 		C094458E1835996800A67974 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BDD023FA1836A63D00DDDF8D /* Parse.framework */,
+				C0AF94391836E3CF00705AE0 /* Parse.framework */,
 				C0F699F21835DD0B006E2C71 /* MessageUI.framework */,
 				C09445E61835B32B00A67974 /* MapKit.framework */,
 				BDD023FC1836A65A00DDDF8D /* FacebookSDK.framework */,
@@ -157,7 +156,6 @@
 				C09445CA18359ACA00A67974 /* CoreLocation.framework */,
 				C09445C818359ABF00A67974 /* CFNetwork.framework */,
 				C09445C618359AB800A67974 /* AudioToolbox.framework */,
-				C09445C418359A9C00A67974 /* Parse.framework */,
 				C094458F1835996800A67974 /* Foundation.framework */,
 				C09445911835996800A67974 /* CoreGraphics.framework */,
 				C09445931835996800A67974 /* UIKit.framework */,
@@ -464,9 +462,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/jesseclayburgh/Desktop/linkup_parse_demo_day/Linkup,
+					/Users/jesseclayburgh/Desktop/linkup,
 					/Users/jesseclayburgh/Documents/FacebookSDK,
 					/Users/daco63122/Developer/Git/linkup,
+					/Users/jesseclayburgh/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Linkup/Linkup-Prefix.pch";
@@ -488,9 +487,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/jesseclayburgh/Desktop/linkup_parse_demo_day/Linkup,
+					/Users/jesseclayburgh/Desktop/linkup,
 					/Users/jesseclayburgh/Documents/FacebookSDK,
 					/Users/daco63122/Developer/Git/linkup,
+					/Users/jesseclayburgh/Downloads,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Linkup/Linkup-Prefix.pch";
