@@ -34,6 +34,10 @@
 		C09445E51835B23300A67974 /* FriendFinderMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C09445E41835B23300A67974 /* FriendFinderMapViewController.m */; };
 		C09445E71835B32B00A67974 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C09445E61835B32B00A67974 /* MapKit.framework */; };
 		C0AF943A1836E3CF00705AE0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AF94391836E3CF00705AE0 /* Parse.framework */; };
+		C0CA447E183826ED004DAF3D /* LinkupUserLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA447D183826ED004DAF3D /* LinkupUserLocation.m */; };
+		C0CA448418397638004DAF3D /* ZSPinAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA448118397638004DAF3D /* ZSPinAnnotation.m */; };
+		C0CA448518397638004DAF3D /* ZSAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = C0CA448318397638004DAF3D /* ZSAnnotation.m */; };
+		C0CA448818397663004DAF3D /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0CA448718397663004DAF3D /* CoreImage.framework */; };
 		C0F699F31835DD0B006E2C71 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0F699F21835DD0B006E2C71 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
@@ -83,6 +87,13 @@
 		C09445E61835B32B00A67974 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C0AF94381836D81B00705AE0 /* LinkupSecretKeys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkupSecretKeys.h; sourceTree = "<group>"; };
 		C0AF94391836E3CF00705AE0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = ../../Downloads/Parse.framework; sourceTree = "<group>"; };
+		C0CA447C183826ED004DAF3D /* LinkupUserLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkupUserLocation.h; sourceTree = "<group>"; };
+		C0CA447D183826ED004DAF3D /* LinkupUserLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkupUserLocation.m; sourceTree = "<group>"; };
+		C0CA448018397638004DAF3D /* ZSPinAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSPinAnnotation.h; sourceTree = "<group>"; };
+		C0CA448118397638004DAF3D /* ZSPinAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSPinAnnotation.m; sourceTree = "<group>"; };
+		C0CA448218397638004DAF3D /* ZSAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZSAnnotation.h; sourceTree = "<group>"; };
+		C0CA448318397638004DAF3D /* ZSAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZSAnnotation.m; sourceTree = "<group>"; };
+		C0CA448718397663004DAF3D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		C0F699F21835DD0B006E2C71 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -91,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CA448818397663004DAF3D /* CoreImage.framework in Frameworks */,
 				C0AF943A1836E3CF00705AE0 /* Parse.framework in Frameworks */,
 				C0F699F31835DD0B006E2C71 /* MessageUI.framework in Frameworks */,
 				C09445E71835B32B00A67974 /* MapKit.framework in Frameworks */,
@@ -144,6 +156,7 @@
 		C094458E1835996800A67974 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0CA448718397663004DAF3D /* CoreImage.framework */,
 				C0AF94391836E3CF00705AE0 /* Parse.framework */,
 				C0F699F21835DD0B006E2C71 /* MessageUI.framework */,
 				C09445E61835B32B00A67974 /* MapKit.framework */,
@@ -167,6 +180,7 @@
 		C09445951835996800A67974 /* Linkup */ = {
 			isa = PBXGroup;
 			children = (
+				C0CA44861839763D004DAF3D /* ZSPinAnnotation */,
 				C0AF94381836D81B00705AE0 /* LinkupSecretKeys.h */,
 				C094459E1835996800A67974 /* LinkupAppDelegate.h */,
 				C094459F1835996800A67974 /* LinkupAppDelegate.m */,
@@ -174,6 +188,7 @@
 				C09445E01835A9D300A67974 /* LoginViewController.m */,
 				C09445A41835996800A67974 /* LinkupViewController.h */,
 				C09445A51835996800A67974 /* LinkupViewController.m */,
+				C0CA447F1838279A004DAF3D /* Parse Data Model */,
 				C09445E31835B23300A67974 /* FriendFinderMapViewController.h */,
 				C09445E41835B23300A67974 /* FriendFinderMapViewController.m */,
 				C09445E21835AE2F00A67974 /* views */,
@@ -218,6 +233,26 @@
 				C09445A11835996800A67974 /* Main.storyboard */,
 			);
 			name = views;
+			sourceTree = "<group>";
+		};
+		C0CA447F1838279A004DAF3D /* Parse Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA447C183826ED004DAF3D /* LinkupUserLocation.h */,
+				C0CA447D183826ED004DAF3D /* LinkupUserLocation.m */,
+			);
+			name = "Parse Data Model";
+			sourceTree = "<group>";
+		};
+		C0CA44861839763D004DAF3D /* ZSPinAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				C0CA448018397638004DAF3D /* ZSPinAnnotation.h */,
+				C0CA448118397638004DAF3D /* ZSPinAnnotation.m */,
+				C0CA448218397638004DAF3D /* ZSAnnotation.h */,
+				C0CA448318397638004DAF3D /* ZSAnnotation.m */,
+			);
+			name = ZSPinAnnotation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,7 +304,7 @@
 				ORGANIZATIONNAME = "j&d";
 				TargetAttributes = {
 					C094458B1835996800A67974 = {
-						DevelopmentTeam = YZQGZ8X5NG;
+						DevelopmentTeam = GSH48R9335;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -326,11 +361,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0CA447E183826ED004DAF3D /* LinkupUserLocation.m in Sources */,
+				C0CA448518397638004DAF3D /* ZSAnnotation.m in Sources */,
 				C09445E11835A9D300A67974 /* LoginViewController.m in Sources */,
 				C094459C1835996800A67974 /* main.m in Sources */,
 				C09445E51835B23300A67974 /* FriendFinderMapViewController.m in Sources */,
 				C09445A61835996800A67974 /* LinkupViewController.m in Sources */,
 				C09445A01835996800A67974 /* LinkupAppDelegate.m in Sources */,
+				C0CA448418397638004DAF3D /* ZSPinAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
