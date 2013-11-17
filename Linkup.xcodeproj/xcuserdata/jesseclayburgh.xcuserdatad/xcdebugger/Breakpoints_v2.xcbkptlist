@@ -113,36 +113,6 @@
             endingLineNumber = "162"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[LinkupViewController updateMapViewAnnotations]"
-                  moduleName = "Linkup"
-                  urlString = "file://localhost/Users/jesseclayburgh/Desktop/linkup_parse_demo_day/Linkup/Linkup/LinkupViewController.m"
-                  timestampString = "406179950.721276"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "145"
-                  endingLineNumber = "145"
-                  offsetFromSymbolStart = "220">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[LinkupViewController updateMapViewAnnotations]"
-                  moduleName = "Linkup"
-                  urlString = "file://localhost/Users/jesseclayburgh/Desktop/linkup_parse_demo_day/Linkup/Linkup/LinkupViewController.m"
-                  timestampString = "406179950.721524"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "145"
-                  endingLineNumber = "145"
-                  offsetFromSymbolStart = "796">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
