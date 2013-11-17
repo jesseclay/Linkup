@@ -8,12 +8,17 @@
 
 #import "LinkupAppDelegate.h"
 #import "LinkupSecretKeys.h"
+#import "LinkupUserLocation.h"
 
 @implementation LinkupAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    // Declare Parse Subclasses
+    [LinkupUserLocation registerSubclass];
+    
     [Parse setApplicationId:PARSE_APPLICATION_ID
                   clientKey:PARSE_CLIENT_KEY];
     
