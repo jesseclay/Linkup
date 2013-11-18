@@ -13,14 +13,19 @@
 #import "LinkupUserLocation.h"
 #import "ZSPinAnnotation.h"
 #import "ZSAnnotation.h"
+#import <CoreLocation/CoreLocation.h>
 
-@interface LinkupViewController () <UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate>
+@interface LinkupViewController ()
+<UITableViewDataSource, UITableViewDelegate, MKMapViewDelegate, CLLocationManagerDelegate>
 
 @property (nonatomic, strong) FriendFinderMapViewController *mapvc;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray* allFriends;
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) FBProfilePictureView *profilePictureView;
+@property (strong, nonatomic) CLLocationManager *locationManager;
+
+
 
 @end
 
@@ -40,14 +45,16 @@
     
     self.tableView.delegate = self;
     
-    locationManager = [[CLLocationManager alloc] init];
-    locationManager.distanceFilter = kCLDistanceFilterNone;
-    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    [locationManager startUpdatingLocation];
+    self.locationManager.delegate = self;
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [self.locationManager startUpdatingLocation];
+    
     
     PFGeoPoint *userLocation =
-    [PFGeoPoint geoPointWithLatitude:locationManager.location.coordinate.latitude
-                           longitude:locationManager.location.coordinate.longitude];
+    [PFGeoPoint geoPointWithLatitude:self.locationManager.location.coordinate.latitude
+                           longitude:self.locationManager.location.coordinate.longitude];
     
     
     if (FBSession.activeSession.isOpen) {
@@ -239,6 +246,9 @@
 {
     _mapView = mapView;
     self.mapView.delegate = self;
+    self.mapView.showsUserLocation = YES;
+    self.mapView.userLocation.title = @"My Location";
+    NSLog(@"updating: %hhd", self.mapView.userLocation.updating);
     [self updateMapViewAnnotations];
 }
 

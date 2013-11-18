@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <CoreLocation/CoreLocation.h>
 
-@interface LinkupViewController : UIViewController {
-    CLLocationManager *locationManager;
-}
+
+@interface LinkupViewController : UIViewController
 
 @end
