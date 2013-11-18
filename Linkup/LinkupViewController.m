@@ -24,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (strong, nonatomic) FBProfilePictureView *profilePictureView;
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (strong, nonatomic) NSString* current_user_fbid;
 
 
 
@@ -72,6 +73,7 @@
                      [queryForUserLocationForCurrentUser findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
                          if (!error){
                              NSLog(@"querying returned %i objects with fbid %@", objects.count, user.id);
+                             self.current_user_fbid = user.id;
                              if (objects.count > 0) {
                                  
                                  int countInOrderToRemoveDuplicates = 0;
@@ -142,6 +144,29 @@
          }];
     }
     
+    
+}
+
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations
+{
+    PFGeoPoint* newLocation = [PFGeoPoint geoPointWithLocation:[locations lastObject]];
+    PFQuery *queryForUserLocationForCurrentUser = [LinkupUserLocation query];
+    [queryForUserLocationForCurrentUser whereKey:FBID_KEY equalTo:self.current_user_fbid];
+    [queryForUserLocationForCurrentUser findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        for (LinkupUserLocation *location in objects) {
+            location.currentLocation = newLocation;
+            [location saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                if (!error) {
+                    // The Person saved successfully. Good.
+                    NSLog(@"Success -- new current user location saved in background");
+                } else {
+                    NSLog(@"FAILURE, new current user location not saved in background");
+                }
+            }];
+
+        }
+    }];
     
 }
 
